@@ -10,9 +10,10 @@ class Solution(object):
         # Он всегда возвращает false.
         if x < 0:
             return False
-        # С помощью listcompreh собираем список из цифр числа на входе.
+        # С помощью list comprehension собираем
+        # список из цифр числа на входе.
         num_list = [int(digit) for digit in str(x)]
-        # Проверяем на равенство получившийся список
+        # Проверяем на равенство получившийся массив
         # с этим же списком наоборот.
         if num_list == num_list[::-1]:
             return True

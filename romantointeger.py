@@ -15,13 +15,19 @@ class Solution(object):
 
         # Создаем цикл, который перебирает все индексы строки на входе.
         for i in range(len(s)):
+            # Переменной присваиваем значение каждой латинской цифры.
             current_value = roman[s[i]]
+            # Если индекс положительный и предыдущее число по значению меньше
             if i > 0 and roman[s[i - 1]] < current_value:
+                # то отнимаем от переменной current_value двойное значение
+                # цифры, которая была уже присвоена этой переменной.
                 answer += current_value - 2 * roman[s[i - 1]]
             else:
+                # В ином случае, просто прибавляем число из словаря к ответу.
                 answer += current_value
 
         return answer
+
 
 # Примеры.
 solution = Solution()

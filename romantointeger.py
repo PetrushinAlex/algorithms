@@ -33,3 +33,7 @@ class Solution(object):
 solution = Solution()
 roman = 'XIV'
 print(solution.romanToInt(roman))
+roman = 'XXIV'
+print(solution.romanToInt(roman))
+roman = 'MCDXXI'
+print(solution.romanToInt(roman))

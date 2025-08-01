@@ -31,5 +31,5 @@ class SolutionAlternative:
 sol = Solution()
 print(sol.addBinary("1110", "10"))
 
-sol = Solution1()
+sol = SolutionAlternative()
 print(sol.addBinary("1110", "10"))
